@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  tf-serve:
+    container_name: tf-serve
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./serve/:/serve/
+    stdin_open: true
+    tty: true
+    ports:
+      - 9000:9000

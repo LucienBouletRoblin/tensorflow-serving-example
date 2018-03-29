@@ -1,2 +1,3 @@
 # tensorflow-serving-example
-No description needed
+
+Run train.py, then serve.py, then the docker-compose
